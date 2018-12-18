@@ -1,0 +1,310 @@
+body{
+  font: 15px/1.5 blackchanceryfont;
+  /*font: 15px/1.5 Arial, Helvetica, sans-serif;*/
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+@font-face {
+  font-family:blackchanceryfont;
+  src:url(blackchanceryfont.ttf);
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#7A327F;
+  border:0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#ffffff;
+  color:#010101;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+
+
+.bottomright{
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+  font-size:24px;
+  font-weight:bold;
+  color:white;
+}
+
+/* Header */
+header{
+  background:#ffffff;
+  color:#010101;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#010101 3px solid;
+}
+
+header a{
+  color:#010101;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#7A327F;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Main */
+
+#main span {
+  float: left;
+  position: auto;
+  bottom:200px;
+}
+
+#main a{
+  font-size: large;
+  text-decoration:none;
+  color:black;
+}
+
+/* Main two */
+
+#maintwo p {
+  padding: 10px;
+  max-width: 45%;
+  float:left;
+  font-weight:bold;
+}
+
+
+#showcase{
+  background:url('../img/craigshowcaseedit.jpeg') no-repeat 0 -0px;
+  min-height:600px;
+  opacity:0.9;
+  border-bottom:#010101 3px solid;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+/* Newsletter */
+#newsletter{
+  padding: 10px;
+  color:black;
+  background:#ffffff;
+}
+
+#newsletter h1{
+  float:left;
+  align-items:center;
+  font-weight: bold;
+  padding:10px;
+}
+
+#newsletter p{
+  font-size:large;
+  font-weight: bold;
+}
+
+#newsletter button, .quote button{
+  display:block;
+  width:100%
+}
+
+#newsletter a:hover{
+  color:grey;
+}
+
+
+/* Boxes */
+#boxes a {text-decoration:none; color:black}
+
+#boxes a:hover {
+  color:grey;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  text-decoration: none;
+  float:right;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  float:right;
+  width:auto;
+  max-height:300px;
+}
+
+#boxes .boxtwo img{
+  float: right;
+  border:none;
+}
+
+#boxes .boxleft img{
+  float:left;
+  width:auto;
+  max-height:300px;
+}
+
+#boxes p {
+  width:400px;
+  text-decoration: none;
+  text-align:left;
+  margin-right:40px;
+  overflow:auto;
+}
+
+/* Images Gallery */
+#images .column{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+#images .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside #sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:middle;
+  width:100%;
+}
+
+#main-col img {
+  float:right;
+  height: 300px;
+  padding:10px;
+  align-items: center;
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+ul#servicestwo li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#ffffff;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#010101;
+  text-align:center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter a{
+    float:center;
+    font-size:small;
+    background-size:cover;
+  }
+}
