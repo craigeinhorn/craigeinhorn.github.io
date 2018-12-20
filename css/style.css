@@ -1,5 +1,5 @@
 body{
-  font: 15px/1.5 blackchanceryfont;
+  font: 15px/1.5 Helvetica;
   /*font: 15px/1.5 Arial, Helvetica, sans-serif;*/
   padding:0;
   margin:0;
@@ -10,6 +10,14 @@ body{
   width:80%;
   margin:auto;
   overflow:hidden;
+}
+
+.bg{
+  background-image: url("../img/rosettesix.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @font-face {
@@ -39,13 +47,23 @@ ul{
   margin-bottom:10px;
 }
 
+.light{
+  padding: 15px;
+  background:#f4f4f4;
+  color:#010101;
+  margin-top:10px;
+  margin-bottom:10px;
+  align-items: center;
+  overflow:hidden;
+}
+
 
 
 .bottomright{
-  position: absolute;
-  bottom: -30px;
-  right: 10px;
-  font-size:24px;
+  position:absolute;
+  top:600px;
+  left:900px;
+  font-size:36px;
   font-weight:bold;
   color:white;
 }
@@ -57,6 +75,7 @@ header{
   padding-top:30px;
   min-height:70px;
   border-bottom:#010101 3px solid;
+  font-family: blackchanceryfont;
 }
 
 header a{
@@ -64,6 +83,7 @@ header a{
   text-decoration:none;
   text-transform: uppercase;
   font-size:16px;
+  font-family: blackchanceryfont;
 }
 
 header li{
@@ -88,11 +108,13 @@ header nav{
 header .highlight, header .current a{
   color:#7A327F;
   font-weight:bold;
+  font-family: blackchanceryfont;
 }
 
 header a:hover{
   color:#cccccc;
   font-weight:bold;
+  font-family: blackchanceryfont;
 }
 
 /* Main */
@@ -111,6 +133,10 @@ header a:hover{
 
 /* Main two */
 
+#maintwo div{
+  text-align:left;
+}
+
 #maintwo p {
   padding: 10px;
   max-width: 45%;
@@ -118,7 +144,51 @@ header a:hover{
   font-weight:bold;
 }
 
+#maintwo .boxtwo {
+  position: relative;
+  left: 50px;
+  width: 30%;
+  padding-bottom:300px;
+  float: right;
+  border:none;
+}
 
+/* Photos */
+
+#photos ul{
+  float: none
+}
+
+/* Video */
+#video ul{
+  float: none;
+  padding: 15px;
+  list-style-type: none;
+  position: auto;
+}
+#video .textbox{
+  width:90%;
+  margin:auto;
+  overflow:hidden;
+  text-align:center;
+  padding: 15px;
+  background:#f4f4f4;
+  color:#010101;
+}
+#video iframe{
+  width: 60%;
+  text-align: center;
+}
+
+#video h1{
+  margin:auto;
+  margin-top: 10px;
+  width:50%;
+  text-align:center;
+  background:#f4f4f4
+}
+
+/* Showcase */
 #showcase{
   background:url('../img/craigshowcaseedit.jpeg') no-repeat 0 -0px;
   min-height:600px;
@@ -200,7 +270,11 @@ header a:hover{
   float:left;
   width:auto;
   max-height:300px;
+  position:relative;
+  top: 7px;
+  display:block;
 }
+
 
 #boxes p {
   width:400px;
@@ -212,15 +286,25 @@ header a:hover{
 
 /* Images Gallery */
 #images .column{
-  float: left;
-  width: 33.33%;
+  float:left;
+  width: 25%;
   padding: 5px;
+  padding-left: 75px;
+  text-align:center;
 }
 
 #images .row::after {
   content: "";
   clear: both;
   display: table;
+}
+
+#images a{
+  text-decoration:none;
+  color:black;
+  background:#f4f4f4;
+  padding:5px;
+  border: 3px solid black;
 }
 
 
@@ -247,6 +331,13 @@ article#main-col{
   height: 300px;
   padding:10px;
   align-items: center;
+}
+
+#main-col .boxright img{
+  float: right;
+  height: 300px;
+  width: auto;
+  padding-left: 50px;
 }
 
 /* Services */
