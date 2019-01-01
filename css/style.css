@@ -197,12 +197,13 @@ header a:hover{
 
 /* Showcase */
 #showcase{
-  background:url('../img/craigshowcaseedit.jpeg') round 0 0px;
+  background:url('../img/craigshowcaseedit.jpeg') no-repeat 0 0px;
   min-height:600px;
   opacity:0.9;
   border-bottom:#010101 3px solid;
   text-align: right;
   vertical-align:bottom;
+  background-size:cover;
 }
 
 #showcase h1{
