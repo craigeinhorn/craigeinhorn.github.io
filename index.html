@@ -1,85 +1,272 @@
 <!DOCTYPE html>
 <html>
-  <head>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130854907-1"></script>
-   <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My first Bulma website</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
 
-    gtag('config', 'UA-130854907-1');
-   </script>
+<body>
 
+  <!-- Navbar -->
+  <nav class="navbar is-white" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a href="index.html" class="navbar-item">
+        <img src="./img/logo.png" alt="" width="200" height="48" />
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu" id="navMenu">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Affordable and Professional Tech Support">
-    <meta name="keywords" content="eugene, oregon, technical support, web design,
-    affordable web design, professional web design,
-    website, alder, french, alder french, geekonabike, geek, on, a, bike,
-    geek on a bikeweb design, affordable web design, professional web design">
-    <meta name="author" content="Alder French">
-    <title>Craig Einhorn | Welcome</title>
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div id="branding">
-          <h1><span class="highlight">Craig</span> Einhorn</h1>
-        </div>
-        <nav>
-          <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="performances.html">Performances</a></li>
-            <li><a href="biography.html">Biography</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="discography.html">Discography</a></li>
-            <li><a href="promo.html">Promo</a></li>
-            <li><a href="tango.html">Tango</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-         </nav>
+      <div class="navbar-start">
+        <a href="./index.html" class="navbar-item title is-2">
 
+        </a>
       </div>
-    </header>
-<div class="showcasecontainer">
-  <section id="showcase">
 
-      <div class="bottomright">Classical Guitarist <br> Singer/Songwriter</div>
+      <div class="navbar-"></div>
 
+      <div class="navbar-end">
+        <a href="#" class="navbar-item">
+          Services
+        </a><a href="#" class="navbar-item">
+          Pricing
+        </a>
+        <a href="#" class="navbar-item">
+          Portfolio
+        </a>
+        <a href="#" class="navbar-item">
+          About
+        </a>
+        <a href="#" class="navbar-item">
+          <button class="button is-primary">Sign In</button>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div style="margin-bottom:-75px"></div>
+
+  <div style="margin-top:75px"></div>
+
+  <!-- SHOWCASE -->
+  <section class="hero-foo is-fullheight">
+
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <h1 class="title is-2 is-spaced">
+              Professional Website Management
+            </h1>
+            <a href="" class="button is-primary">
+              Sign Up
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-</div>
-
-
-  <!--  <section id="newsletter">
-      <div class="container">
-        <a> +1 (541)-520-9053</a>
-        <a href="mailto:craigeinhorn@gmail.com"> CraigEinhorn@gmail.com </a>
-        <h1>Next Gig:</h1>
-        <p>Somewhere Stadium<br> 12/21/2018</p>
+  <!-- Services Boxes -->
+  <section class="section">
+    <section class="hero">
+      <div class="hero-body has-text-centered">
+        <a href="./whyus.html" class="title is-1">
+          Why Us?
+        </a>
       </div>
-    </section> -->
-
-    <section id="boxes">
-      <div class="container">
-        <div class="box">
-          <img src="./img/craigchoirfixed.jpg"></img>
-        </div>
-        <div class="boxleft">
-          <img src="./img/mozartplayers.jpeg"></img>
-        </div>
-
-      </div>
-
-
     </section>
+    <div class="container">
 
-          <footer>
-            <p>Craig Einhorn, Copyright &copy; 2018</p>
-          </footer>
-  </body>
+      <div class="columns">
+
+        <div class="column">
+          <figure class="image is-4by3">
+            <img src="./img/designer.jpg">
+            <a class="button is-dark" style="position:absolute; left: 50%; top: 75%; transform: translate(-50%, -25%);">
+              Professional Design
+            </a>
+          </figure>
+        </div>
+
+        <div class="column">
+          <figure class="image is-4by3">
+            <img src="./img/codeshot.jpg">
+            <a class="button is-dark" style="position:absolute; left: 50%; top: 75%; transform: translate(-50%, -25%);">
+              Custom Code
+            </a>
+          </figure>
+        </div>
+
+        <div class="column">
+          <figure class="image is-4by3">
+            <img src="./img/servers.jpg">
+            <a class="button is-dark" style="position:absolute; left: 50%; top: 75%; transform: translate(-50%, -25%);">
+              Fully Maintained
+            </a>
+          </figure>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Statistics Level -->
+  <section class="section">
+    <nav class="level">
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Servers</p>
+          <p class="title">3,456</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Websites</p>
+          <p class="title">123</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Cool Statistic</p>
+          <p class="title">456K</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Cooler Staistic</p>
+          <p class="title">789</p>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Pricing Packages -->
+  <section class="hero">
+  <div class="notification is-danger has-text-centered">
+    <a href="./pricing" class="title is-1" style="text-decoration:none;">
+      Service Packages
+    </a>
+    <div class="tile is-ancestor">
+
+      <div class="tile is-parent">
+        <article class="tile is-child box has-text-centered">
+          <h1 class="title is-2">
+            Package 1
+          </h1>
+          <p class="subtitle">
+            Hosting, E-commerce, Site Design
+          </p>
+          <figure class="image is-4by3">
+            <img src="./img/server.svg">
+          </figure>
+        </article>
+      </div>
+
+      <div class="tile is-parent">
+        <article class="tile is-child box has-text-centered">
+          <h1 class="title is-2">
+            Package 1
+          </h1>
+          <p class="subtitle">
+            Hosting, E-commerce, Site Design
+          </p>
+          <figure class="image is-4by3">
+            <img src="./img/server.svg">
+          </figure>
+        </article>
+      </div>
+
+      <div class="tile is-parent">
+        <article class="tile is-child box has-text-centered">
+          <h1 class="title is-2">
+            Package 1
+          </h1>
+          <p class="subtitle">
+            Hosting, E-commerce, Site Design
+          </p>
+          <figure class="image is-4by3">
+            <img src="./img/server.svg">
+          </figure>
+        </article>
+      </div>
+
+      <div class="tile is-parent">
+        <article class="tile is-child box has-text-centered">
+          <h1 class="title is-2">
+            Package 1
+          </h1>
+          <p class="subtitle">
+            Hosting, E-commerce, Site Design
+          </p>
+          <figure class="image is-4by3">
+            <img src="./img/server.svg">
+          </figure>
+        </article>
+      </div>
+
+    </div>
+
+    <div class="notification">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h1 class="title is-3 has-text-black">
+              Why you need a hosting,
+            </h1>
+          </div>
+          <div class="column">
+            <p class="subtitle has-text-black">Some text </p>
+            <a href="./signup.html" class="button is-primary">
+              Get Started
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="hero is-large">
+    <div class="hero-body">
+      <p> Slidey Images Will go here</p>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer has-text-centered">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8-desktop is-offset-2-desktop">
+          <p>
+            <strong class="has-text-weight-semibold">
+              <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.1</a>
+            </strong>
+          </p>
+          <p>
+            <small>
+              Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+            </small>
+          </p>
+          <p style="margin-top: 1rem;">
+            <a href="http://bulma.io">
+              <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="lib/main.js"></script>
+</body>
+
 </html>
